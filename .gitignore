@@ -1,0 +1,9 @@
+node_modules/
+dist/
+apps/
+test-results/
+playwright-report/
+blob-report/
+.wdio-logs/
+allure-results/
+allure-report/
