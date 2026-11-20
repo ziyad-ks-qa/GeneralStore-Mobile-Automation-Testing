@@ -1,8 +1,12 @@
 import allure from '@wdio/allure-reporter';
+import { Jimp, JimpMime } from 'jimp';
 
+// JPEG keeps the audit trail screenshots small and quick to browse outside Allure
 async function attachScreenshot(name: string) {
     const screenshot = await browser.takeScreenshot();
-    allure.addAttachment(name, Buffer.from(screenshot, 'base64'), 'image/png');
+    const pngBuffer = Buffer.from(screenshot, 'base64');
+    const jpegBuffer = await (await Jimp.fromBuffer(pngBuffer)).getBuffer(JimpMime.jpeg);
+    allure.addAttachment(name, jpegBuffer, 'image/jpeg');
 }
 
 describe('General Store - App Launch', () => {

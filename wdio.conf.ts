@@ -1,3 +1,4 @@
+import path from 'path';
 import type { Options } from '@wdio/types';
 
 export const config: Options.Testrunner = {
@@ -15,7 +16,7 @@ export const config: Options.Testrunner = {
             platformName: 'Android',
             'appium:deviceName': 'emulator-5554',
             'appium:automationName': 'UiAutomator2',
-            'appium:app': '/Users/ziyadkhalis/Downloads/General-Store.apk',
+            'appium:app': path.resolve('./General-Store.apk'),
             'appium:appPackage': 'com.androidsample.generalstore',
             'appium:appActivity': '.SplashActivity',
             'appium:appWaitActivity': '.MainActivity',

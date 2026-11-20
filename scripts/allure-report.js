@@ -21,6 +21,17 @@ if (fs.existsSync(HISTORY_SRC)) {
     console.log('ℹ No previous Allure history found (first run)');
 }
 
+// Step 1b: Copy JPEG screenshots into their own subfolder for easier manual review;
+// originals stay in place since allure generate expects attachments flat in RESULTS_DIR
+const SCREENSHOTS_DST = path.join(RESULTS_DIR, 'screenshots');
+fs.mkdirSync(SCREENSHOTS_DST, { recursive: true });
+for (const file of fs.readdirSync(RESULTS_DIR)) {
+    if (file.endsWith('.jpeg') || file.endsWith('.jpg')) {
+        fs.copyFileSync(path.join(RESULTS_DIR, file), path.join(SCREENSHOTS_DST, file));
+    }
+}
+console.log('✔ JPEG screenshots copied to allure-results/screenshots');
+
 // Step 2: Generate fresh report (includes history from allure-results/history)
 execSync('npx allure generate allure-results --clean -o allure-report', { stdio: 'inherit' });
 console.log('✔ Allure report generated');

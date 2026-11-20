@@ -7,3 +7,4 @@ blob-report/
 .wdio-logs/
 allure-results/
 allure-report/
+.idea/
