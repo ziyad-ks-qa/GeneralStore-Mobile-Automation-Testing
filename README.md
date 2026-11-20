@@ -119,7 +119,7 @@ Because `noReset` is enabled, a test that fails midway can leave the app in an u
 
 Automation video recording is presented as per here:
 
-[! [Watch the video](https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/video.mp4)]
+[[Watch the video](Automation Recording.mp4)]
 
 ## Author
 
