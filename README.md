@@ -119,7 +119,7 @@ Because `noReset` is enabled, a test that fails midway can leave the app in an u
 
 Automation video recording is presented as per here:
 
-[Watch the video]([Automation Recording.mp4](https://github.com/ziyadgitt/GeneralStore-Mobile-Automation-Testing/blob/7bf8e62612429f903b0d2d817048e875f7bc4254/Automation%20Recording.mp4))]
+([Automation Recording.mp4](https://github.com/ziyadgitt/GeneralStore-Mobile-Automation-Testing/blob/7bf8e62612429f903b0d2d817048e875f7bc4254/Automation%20Recording.mp4))
 
 ## Author
 
