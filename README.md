@@ -115,6 +115,11 @@ The full list of test cases, with expected results, is in the test suite spreads
 
 Because `noReset` is enabled, a test that fails midway can leave the app in an unexpected state. If the next run behaves strangely, clear the app data on the emulator or set `noReset` to `false`.
 
+## Automation Recording
+
+Automation video recording is presented as per here:
+Automation Recording.mp4
+
 ## Author
 
 Ziyad Al Khalis, QA Engineer
