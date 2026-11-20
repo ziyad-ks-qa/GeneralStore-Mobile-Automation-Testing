@@ -118,6 +118,7 @@ Because `noReset` is enabled, a test that fails midway can leave the app in an u
 ## Automation Recording
 
 Automation video recording is presented as per here:
+
 Automation Recording.mp4
 
 ## Author
